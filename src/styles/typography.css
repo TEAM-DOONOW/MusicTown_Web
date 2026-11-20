@@ -1,0 +1,89 @@
+/* Shared weight scale, applied after section styles. */
+.feature-copy h2 {
+  font-size: clamp(34px, 3.5vw, 48px);
+  line-height: 1.4;
+}
+.feature-copy p {
+  font-size: 18px;
+  line-height: 1.85;
+  max-width: 430px;
+}
+@media (max-width: 760px) {
+  .feature-copy h2 { font-size: 34px; }
+  .feature-copy p { font-size: 17px; }
+}
+:root { font-weight: 500; }
+h1, h2, h3,
+.hero h1,
+.release-banner-copy h3,
+.town-ribbon,
+.intro .activity-strip > span > span:last-child,
+.start-button,
+.start-button.small,
+.release-cta,
+.site-footer .footer-wordmark {
+  -webkit-text-stroke: .85px currentColor;
+}
+p,
+.hero-copy p,
+.intro > p,
+.feature-copy p,
+.invitation > p,
+.page-description,
+.release-banner-copy p,
+.detail-page li,
+.site-footer .footer-copyright,
+.site-footer .footer-description { font-weight: 600; }
+.browser-note,
+.hero .browser-note,
+.photo-caption,
+.demo-caption,
+.device-guide,
+.release-meta,
+.release-banner-copy time,
+.footer-links a { font-weight: 600; }
+.navigation,
+.text-link,
+.eyebrow,
+.section-kicker,
+.tag { font-weight: 700; }
+.scene-label span,
+.scene-sticker,
+.release-bubble { font-weight: 600; }
+
+/* Rounded lettering for promotional copy, without synthetic bold. */
+.hero-copy p,
+.intro > p,
+.feature-copy p,
+.invitation > p,
+.page-description,
+.release-banner-copy p,
+.detail-page li,
+.navigation,
+.text-link,
+.eyebrow,
+.browser-note,
+.device-guide,
+.footer-links a {
+  font-family: "Jua", "Pretendard", sans-serif;
+  font-weight: 400;
+  letter-spacing: .01em;
+  -webkit-text-stroke: .35px currentColor;
+}
+.hero-copy p, .intro > p, .feature-copy p, .invitation > p {
+  font-size: 19px;
+  line-height: 1.8;
+}
+.release-banner-copy p, .page-description { font-size: 17px; }
+.navigation, .footer-links a { font-size: 16px; }
+.hero h1,
+.feature-copy h2,
+.intro .cloud-heading,
+.invitation h2,
+.section-heading h2 {
+  letter-spacing: .025em;
+  text-shadow: 2px 2px 0 #fff9e9, -1px -1px 0 #fff9e9;
+}
+@media (max-width: 760px) {
+  .hero-copy p, .intro > p, .feature-copy p, .invitation > p { font-size: 18px; }
+}

@@ -1,0 +1,107 @@
+.hero.hero-illustrated {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  isolation: isolate;
+  min-height: clamp(600px, 49vw, 850px);
+  padding: 70px 7%;
+  background: #e7dfbb;
+  border: 0;
+}
+.hero-illustrated .hero-background {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right center;
+  transform: scale(1.35);
+  transform-origin: right center;
+  z-index: -2;
+}
+.hero.hero-illustrated::after {
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  z-index: -1;
+  background: radial-gradient(ellipse at center, #fff9eae8 0%, #fff9eaa6 22%, #fff9ea26 45%, transparent 68%);
+}
+.hero-illustrated .hero-copy { padding: 0; max-width: 560px; width: 100%; text-align: center; }
+.hero-illustrated .hero-brand-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 30px;
+  padding: 0;
+  width: fit-content;
+  max-width: 100%;
+  line-height: 1;
+  background: none;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+.hero-brand-image { width: min(480px, 100%); height: auto; margin-inline: auto; filter: drop-shadow(0 4px 0 #fffaf0b3); }
+.hero-illustrated .hero-copy > p { background: none; padding: 0; width: fit-content; margin-inline: auto; font-size: 21px; color: #294737; text-shadow: 0 1px 3px #fffaf0; }
+.hero-illustrated .hero-copy > p {
+  margin: 0 auto 24px;
+  padding: 16px 24px;
+  background: #fffaf0f0;
+  border-radius: 20px;
+  font-size: 23px;
+  line-height: 1.65;
+  color: #263e31;
+  text-shadow: none;
+}
+.hero-illustrated .start-button {
+  min-width: 280px;
+  min-height: 68px;
+  padding: 16px 30px;
+  font-size: 23px;
+  color: #fffdf1;
+  background: #315d47;
+  border: 2px solid #fff7dd;
+  border-radius: 24px;
+  box-shadow: 0 6px 16px #28473635;
+  gap: 30px;
+}
+.hero-illustrated .start-button:hover { background: #234b37; }
+.hero-illustrated .start-button-icon { width: 40px; height: 40px; background: #ffe5a3; color: #31523d; }
+.hero-illustrated .browser-note {
+  display: table;
+  margin: 16px auto 0;
+  padding: 6px 12px;
+  border-radius: 12px;
+  background: #fffaf0e8;
+  color: #36513d;
+  font-size: 15px;
+}
+.hero-illustrated .hero-copy h1 { font-size: clamp(40px, 4.2vw, 64px); }
+.hero-illustrated .eyebrow { background: #fffaf0d9; border-color: #d5c6a7; }
+.hero-art-caption { position: absolute; bottom: 18px; right: 24px; background: #fffaf0db; color: #635743; padding: 6px 10px; border-radius: 8px; font-size: 11px; }
+.hero-illustrated + .intro {
+  margin-top: -27px;
+  z-index: 1;
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 40' preserveAspectRatio='none'%3E%3Cpath d='M0 40H1200V16C1155 4 1132 29 1085 20S1012 7 966 18S897 30 848 17S781 9 735 21S661 27 613 15S549 9 503 22S427 26 383 14S319 12 273 23S202 27 156 16S82 8 43 19S12 23 0 18Z'/%3E%3C/svg%3E"), linear-gradient(#000, #000);
+  mask-size: 100% 28px, 100% calc(100% - 27px);
+  mask-position: top, bottom;
+  mask-repeat: no-repeat;
+}
+.hero-illustrated + .intro::before {
+  content: none;
+}
+.hero-illustrated .hero-art-caption { bottom: 40px; }
+@media(max-width: 760px) {
+  .hero.hero-illustrated { align-items: center; min-height: 740px; padding: 70px 24px; }
+  .hero-illustrated .hero-copy { width: 100%; max-width: none; }
+  .hero-brand-image { width: min(330px, 90%); margin-inline: auto; }
+  .hero-illustrated .hero-copy h1 { font-size: clamp(36px, 9vw, 46px); }
+  .hero-illustrated .hero-background { object-position: 72% center; transform: none; }
+  .hero.hero-illustrated::after { background: radial-gradient(ellipse at center, #fff9eaf0 0%, #fff9eab3 32%, #fff9ea26 65%, transparent 90%); }
+  .hero-illustrated .hero-brand-title { padding: 0; border-radius: 0; }
+  .hero-illustrated .hero-copy > p { font-size: 20px; padding: 14px 16px; }
+  .hero-illustrated .start-button { min-width: min(280px, 100%); font-size: 22px; }
+  .hero-art-caption { bottom: 12px; right: 12px; font-size: 10px; }
+}

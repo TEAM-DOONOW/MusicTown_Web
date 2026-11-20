@@ -1,0 +1,356 @@
+@font-face {
+  font-family: "Jua";
+  src: url("/fonts/Jua-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  --town-heading: "Jua", "Pretendard", sans-serif;
+}
+.floating-note {
+  font-family: "Segoe UI Symbol", sans-serif;
+  font-weight: 700;
+  font-size: 54px;
+  opacity: 1;
+  color: #ed857c;
+  text-shadow: 2px 3px 0 #fff8dd;
+  -webkit-text-stroke: 0;
+}
+.note-one {
+  color: #e67f7a;
+  background: linear-gradient(140deg, #ec797d 20%, #f4b748 55%, #54b9b1 85%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: none;
+  filter: drop-shadow(2px 3px 0 #fff8dd);
+}
+.note-two {
+  color: #54a9cc;
+  text-shadow: 3px 3px 0 #f6cf65;
+  transform: rotate(-14deg);
+}
+h1,
+h2,
+.release-banner-copy h3 {
+  font-family: var(--town-heading);
+  font-weight: 400;
+  letter-spacing: 0;
+  -webkit-text-stroke: 0;
+}
+.hero h1 {
+  font-family: "Jua", "Pretendard", sans-serif;
+  font-weight: 400;
+  font-size: clamp(40px, 4vw, 58px);
+  color: #294c3c;
+  letter-spacing: 0;
+  line-height: 1.35;
+  -webkit-text-stroke: 0;
+}
+.hero-copy p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #425748;
+  line-height: 1.8;
+  letter-spacing: 0;
+}
+.hero .browser-note {
+  font-size: 14px;
+  color: #4e614e;
+}
+.hero .start-button {
+  background: #fffdf5;
+  border-color: #c5d0b8;
+  color: #345342;
+  box-shadow: 0 2px 5px #4864460a;
+  border-radius: 18px;
+}
+.hero .start-button:hover {
+  background: #fff;
+}
+.hero .start-button-icon {
+  background: #edf1e3;
+}
+.intro {
+  position: relative;
+  isolation: isolate;
+  max-width: none;
+  padding: 78px 24px 80px;
+  background-color: #8bcca5;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='65' height='65'%3E%3Cpath d='m8 9 7 8-9 1zm38 31 7 3-5 7z' fill='%236ab78e' fill-opacity='.45'/%3E%3Cpath d='m28 49 6 4-7 3z' fill='%23d0e6ab' fill-opacity='.6'/%3E%3C/svg%3E");
+}
+.intro:before,
+.intro:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 15px;
+  background: radial-gradient(ellipse at 50% 0, #fffdf6 68%, transparent 72%) 0
+    0 / 40px 20px repeat-x;
+  pointer-events: none;
+}
+.intro:before {
+  top: -1px;
+}
+.intro:after {
+  bottom: -1px;
+  transform: rotate(180deg);
+}
+.town-ribbon {
+  display: table;
+  margin: 0 auto 30px;
+  background: #ef8580;
+  color: #fffdf6;
+  padding: 8px 35px 10px;
+  font-family: var(--town-heading);
+  font-size: 17px;
+  clip-path: polygon(0 0, 100% 0, 96% 50%, 100% 100%, 0 100%, 4% 50%);
+  transform: rotate(-2deg);
+}
+.intro .cloud-heading {
+  position: relative;
+  isolation: isolate;
+  display: table;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 19px 34px;
+  background: #fffef8;
+  border-radius: 60px;
+  font-size: clamp(22px, 2.6vw, 33px);
+  line-height: 1.5;
+  color: #79552f;
+  text-wrap: balance;
+}
+.cloud-heading:before,
+.cloud-heading:after {
+  content: "";
+  position: absolute;
+  left: 24px;
+  right: 24px;
+  height: 27px;
+  z-index: -1;
+  background: radial-gradient(ellipse, #fffef8 69%, transparent 72%) 0 0 / 54px
+    42px repeat-x;
+}
+.cloud-heading:before {
+  top: -12px;
+}
+.cloud-heading:after {
+  bottom: -12px;
+  transform: rotate(180deg);
+}
+.cloud-heading > span {
+  color: #ef827f;
+}
+.intro > p {
+  color: #264e37;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.85;
+  margin: 32px 0;
+}
+.intro .activity-strip {
+  color: #34563e;
+  gap: 65px;
+}
+.intro .activity-strip > span > span:last-child {
+  font-family: var(--town-heading);
+  font-size: 17px;
+}
+.intro .activity-icon {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 4px solid #fffdf4;
+  box-shadow: 0 4px 0 #63a68155;
+}
+.feature h2,
+.invitation h2,
+.section-heading h2 {
+  color: #79552f;
+}
+.feature-copy p,
+.invitation > p,
+.page-description {
+  font-size: 16px;
+  color: #4d604f;
+  line-height: 1.85;
+}
+.release-banner-copy p {
+  font-size: 15px;
+  color: #62583f;
+  line-height: 1.75;
+}
+.start-button,
+.release-cta {
+  font-family: var(--town-heading);
+  font-weight: 400;
+  font-size: 18px;
+}
+.start-button.small {
+  font-size: 15px;
+}
+.section-kicker {
+  font-size: 12px;
+  letter-spacing: 1.5px;
+}
+.device-guide {
+  font-size: 12px;
+  color: #536246;
+}
+/* Music Town: warm paper, record grooves and a coral accent. */
+.intro {
+  background: #f7f2e9;
+  border-block: 1px solid #e9e1d4;
+}
+.intro:before, .intro:after,
+.cloud-heading:before, .cloud-heading:after {
+  content: none;
+}
+.town-ribbon {
+  background: transparent;
+  color: #a95745;
+  clip-path: none;
+  transform: none;
+  padding: 0;
+  margin-bottom: 18px;
+}
+.intro .cloud-heading {
+  background: transparent;
+  border-radius: 0;
+  color: #304d43;
+  padding: 0;
+}
+.cloud-heading > span { color: #bf6954; }
+.intro > p { color: #56635b; }
+.intro .activity-strip { margin-top: 38px; }
+.intro .activity-icon {
+  border: 0;
+  box-shadow: 0 0 0 7px #f7f2e9, 0 0 0 8px #dad2c6, 0 0 0 13px #f7f2e9, 0 0 0 14px #e8dfd3;
+}
+.intro .activity-walk { background: #e0e9dc; }
+.intro .activity-sing { background: #f0d8d0; }
+.intro .activity-rest { background: #e5deed; }
+.intro .activity-strip > span { gap: 26px; }
+.intro, .news {
+  background-color: #d9947f;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='80' viewBox='0 0 160 80'%3E%3Cg stroke='%23fff8ee' stroke-width='4'%3E%3Cpath d='M0 0H160M0 40H160M0 80H160M80 0V40M0 40V80M160 40V80'/%3E%3C/g%3E%3Cpath d='M4 5H76V35H4ZM84 45H156V75H84Z' fill='%23ca8b68' fill-opacity='.07'/%3E%3C/svg%3E");
+  background-size: 160px 80px;
+}
+.intro .activity-icon {
+  box-shadow: 0 0 0 7px #e7b4a2, 0 0 0 8px #b87864, 0 0 0 13px #e7b4a2, 0 0 0 14px #c58a76;
+}
+.intro .cloud-heading {
+  background: #fffaf0;
+  border-radius: 60px;
+  padding: 20px 34px;
+  margin-top: 25px;
+}
+.cloud-heading:before, .cloud-heading:after {
+  content: "";
+  background: radial-gradient(ellipse, #fffaf0 69%, transparent 72%) 0 0 / 54px 42px repeat-x;
+}
+.intro .town-ribbon {
+  background: #fffaf0e8;
+  border-radius: 20px;
+  padding: 8px 20px;
+  color: #984d3b;
+}
+.intro > p {
+  display: table;
+  max-width: 100%;
+  margin: 32px auto;
+  padding: 16px 26px;
+  border-radius: 20px;
+  background: #fffaf0e8;
+  color: #4d594c;
+}
+.intro .activity-strip > span > span:last-child {
+  background: #fffaf0eb;
+  padding: 9px 14px;
+  border-radius: 16px;
+}
+.news .section-heading > div {
+  background: #fffaf0;
+  border-radius: 36px;
+  padding: 20px 30px;
+}
+.news .section-heading > .text-link {
+  background: #fffaf0eb;
+  border-radius: 22px;
+  padding: 12px 20px;
+}
+.intro {
+  border-block: 0;
+}
+.news {
+  position: relative;
+  border-block: 0;
+}
+.intro::before,
+.intro::after,
+.news::before,
+.news::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 28px;
+  z-index: 1;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 40' preserveAspectRatio='none'%3E%3Cpath d='M0 0H1200V16C1155 4 1132 29 1085 20S1012 7 966 18S897 30 848 17S781 9 735 21S661 27 613 15S549 9 503 22S427 26 383 14S319 12 273 23S202 27 156 16S82 8 43 19S12 23 0 18Z' fill='%23fffdf6'/%3E%3C/svg%3E");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.intro::before,
+.news::before {
+  top: -1px;
+  transform: none;
+}
+.intro::after,
+.news::after {
+  bottom: -1px;
+  transform: rotate(180deg);
+}
+.news::after {
+  background-color: #eef3df;
+  background-image: none;
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 40' preserveAspectRatio='none'%3E%3Cpath d='M0 0H1200V16C1155 4 1132 29 1085 20S1012 7 966 18S897 30 848 17S781 9 735 21S661 27 613 15S549 9 503 22S427 26 383 14S319 12 273 23S202 27 156 16S82 8 43 19S12 23 0 18Z'/%3E%3C/svg%3E");
+  mask-size: 100% 100%;
+  mask-repeat: no-repeat;
+}
+@media (max-width: 760px) {
+  .hero h1 {
+    font-size: clamp(36px, 9vw, 44px);
+  }
+  .hero-copy p {
+    font-size: 16px;
+  }
+  .intro {
+    padding: 60px 18px;
+  }
+  .intro .cloud-heading {
+    font-size: 25px;
+    padding: 15px 20px;
+  }
+  .town-ribbon {
+    font-size: 15px;
+  }
+  .intro .activity-strip {
+    gap: 20px;
+  }
+  .intro .activity-icon {
+    width: 70px;
+    height: 70px;
+  }
+  .intro .activity-strip > span > span:last-child {
+    font-size: 15px;
+    padding: 8px 10px;
+  }
+  .intro .activity-strip { gap: 12px; }
+  .intro > p {
+    font-size: 16px;
+  }
+}

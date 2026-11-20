@@ -1,0 +1,66 @@
+.footer-logo img {
+  display: block;
+  width: 200px;
+  max-width: 100%;
+  height: auto;
+}
+.site-footer {
+  display: block;
+  padding: 64px 6% 40px;
+  background: #f2f3f8;
+  color: #5d6579;
+  text-align: left;
+}
+.site-footer .footer-content {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 38px 48px;
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
+}
+.site-footer .footer-wordmark {
+  font-family: "Jua", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.2;
+  letter-spacing: .5px;
+  color: #263c33;
+}
+.site-footer .footer-copyright {
+  margin: 16px 0 18px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #526078;
+}
+.site-footer .footer-description {
+  font-size: 14px;
+  line-height: 1.9;
+  color: #69778d;
+}
+.footer-socials { display: flex; align-items: flex-start; gap: 12px; }
+.footer-socials a {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #60687b;
+  color: white;
+  transition: background .2s, transform .2s;
+}
+.footer-socials a:hover { background: #3c5148; transform: translateY(-2px); }
+.footer-links { grid-column: 1 / -1; display: flex; flex-wrap: wrap; align-items: center; gap: 0; }
+.footer-links a { font-size: 14px; line-height: 1.4; color: #627189; padding: 0 13px; }
+.footer-links a:first-child { padding-left: 0; }
+.footer-links a + a { border-left: 1px solid #ccd0da; }
+.footer-links a:hover { text-decoration: underline; }
+@media(max-width: 760px) {
+  .site-footer { padding: 40px 24px 30px; }
+  .site-footer .footer-content { grid-template-columns: 1fr; gap: 26px; justify-content: start; }
+  .site-footer .footer-wordmark { font-size: 28px; }
+  .site-footer .footer-copyright { font-size: 13px; }
+  .site-footer .footer-description { font-size: 14px; }
+  .footer-socials { grid-row: 2; }
+  .footer-links a { font-size: 13px; }
+}

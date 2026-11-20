@@ -1,0 +1,43 @@
+.feature-copy {
+  padding: 42px 32px 32px;
+  background: #f9edd8;
+  border: 1px solid #e6d2af;
+  border-radius: 30px 34px 32px 12px;
+  box-shadow: 0 7px 0 #eaddc54d;
+}
+.feature-copy::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 36px;
+  width: 70px;
+  height: 23px;
+  background: #dfb3a8b8;
+  border-inline: 2px dashed #fff8eb80;
+  transform: rotate(-6deg);
+}
+.feature-copy .feature-number {
+  position: static;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 35px;
+  margin-bottom: 18px;
+  background: #fffaf0;
+  border-radius: 14px;
+  font-family: var(--town-heading);
+  font-size: 22px;
+  color: #a7654f;
+}
+.feature:nth-child(even) .feature-copy {
+  background: #eaf0e3;
+  border-color: #d4dfc9;
+  box-shadow: 0 7px 0 #dce5d04d;
+}
+.feature:nth-child(even) .feature-copy::before { background: #b9cba3b8; transform: rotate(5deg); }
+.feature-copy h2 { font-size: clamp(32px, 3vw, 42px); }
+@media(max-width: 760px) {
+  .feature .feature-copy { padding: 32px 24px 28px; }
+  .feature-copy h2 { font-size: 32px; }
+}
